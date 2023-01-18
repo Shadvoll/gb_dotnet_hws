@@ -2,9 +2,10 @@
 Console.WriteLine("Программа, которая по номеру дня недели выводит выходной или нет.");
 Console.Write("Введите номер дня недели (1-7): ");
 int weekDayNumber = int.Parse(Console.ReadLine());
-if (weekDayNumber>0 && weekDayNumber < 8)
+if (weekDayNumber > 0 && weekDayNumber < 8)
 {
-    if (weekDayNumber == 6 || weekDayNumber == 7){
+    if (weekDayNumber == 6 || weekDayNumber == 7)
+    {
         Console.WriteLine("Да");
     }
     else
@@ -12,6 +13,7 @@ if (weekDayNumber>0 && weekDayNumber < 8)
         Console.WriteLine("Нет");
     }
 }
-else{
+else
+{
     Console.WriteLine("Неверный ввод. Номер должен быть от 1 до 7");
 }
