@@ -16,4 +16,4 @@ int MyPower(int number, int power)
 
 int number = GetNum("Введите основание: ");
 int power = GetNum("Введите степень числа: ");
-Console.WriteLine($"Результат возведения в степень: {MyPower(number,power)}");
+Console.WriteLine($"Результат возведения в степень: {MyPower(number, power)}");

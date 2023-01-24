@@ -4,9 +4,11 @@ int GetNum(string text)
     Console.Write(text);
     return int.Parse(Console.ReadLine());
 }
-int SumDigits(int number){
-    if (number>0){
-        return number%10 + SumDigits(number/10);
+int SumDigits(int number)
+{
+    if (number > 0)
+    {
+        return number % 10 + SumDigits(number / 10);
     }
     return 0;
 }
