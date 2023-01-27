@@ -16,7 +16,7 @@ int[] CreateRandomArray(int size, int lowerBound, int upperBound)
 int CalcSumEvenIndices(int[] array)
 {
     int sum = 0;
-    for (int i = 0; i < array.Length; i += 2)
+    for (int i = 1; i < array.Length; i += 2)
     {
         sum += array[i];
     }
