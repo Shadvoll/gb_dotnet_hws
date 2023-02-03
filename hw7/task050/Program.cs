@@ -53,7 +53,7 @@ bool FindNumberInMatrix(int[,] matrix, int number)
 int m = GetNum("Введите количество строк: ");
 int n = GetNum("Введите количество столбцов: ");
 int[,] matrix = GenerateMatrix(m, n, -10, 10);
-ShowMatrix(matrix,"Сгенерированная матрица: ");
+ShowMatrix(matrix, "Сгенерированная матрица: ");
 int number = GetNum("Введите число для поиска: ");
 if (FindNumberInMatrix(matrix, number))
 {

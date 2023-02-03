@@ -50,7 +50,7 @@ Tuple<bool, int> FindNumberInMatrix(int[,] matrix, int index)
 int m = GetNum("Введите количество строк: ");
 int n = GetNum("Введите количество столбцов: ");
 int[,] matrix = GenerateMatrix(m, n, 0, 30);
-ShowMatrix(matrix,"Сгенерированная матрица: ");
+ShowMatrix(matrix, "Сгенерированная матрица: ");
 int index = GetNum("Введите глваный индекс числа для вывода: ");
 Tuple<bool, int> answer = FindNumberInMatrix(matrix, index);
 if (answer.Item1)

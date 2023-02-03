@@ -42,7 +42,7 @@ int[] CalcSumsOfCols(int[,] matrix)
     {
         for (int i = 0; i < rows; i++)
         {
-            sums[j] += matrix[i,j];
+            sums[j] += matrix[i, j];
         }
     }
     return sums;
@@ -59,7 +59,7 @@ void ShowArray(int[] array)
 int m = GetNum("Введите количество строк: ");
 int n = GetNum("Введите количество столбцов: ");
 int[,] matrix = GenerateMatrix(m, n, 0, 10);
-ShowMatrix(matrix,"Сгенерированная матрица: ");
+ShowMatrix(matrix, "Сгенерированная матрица: ");
 int[] sums = CalcSumsOfCols(matrix);
 Console.WriteLine("Суммы столбцов: ");
 ShowArray(sums);
