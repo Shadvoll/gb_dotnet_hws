@@ -33,25 +33,26 @@ void ShowMatrix(int[,] matrix, string text = null)
         Console.WriteLine();
     }
 }
-int[] CalcSumsOfCols(int[,] matrix)
+double[] CalcSumsOfCols(int[,] matrix)
 {
     int rows = matrix.GetLength(0);
     int columns = matrix.GetLength(1);
-    int[] sums = new int[columns];
+    double[] sums = new double[columns];
     for (int j = 0; j < columns; j++)
     {
         for (int i = 0; i < rows; i++)
         {
             sums[j] += matrix[i, j];
         }
+        sums[j] /= rows;
     }
     return sums;
 }
-void ShowArray(int[] array)
+void ShowArray(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i] + " ");
+        Console.Write(array[i] + "\t");
     }
     Console.WriteLine();
 }
@@ -60,6 +61,6 @@ int m = GetNum("Введите количество строк: ");
 int n = GetNum("Введите количество столбцов: ");
 int[,] matrix = GenerateMatrix(m, n, 0, 10);
 ShowMatrix(matrix, "Сгенерированная матрица: ");
-int[] sums = CalcSumsOfCols(matrix);
-Console.WriteLine("Суммы столбцов: ");
+double[] sums = CalcSumsOfCols(matrix);
+Console.WriteLine("Среднее столбцов: ");
 ShowArray(sums);
