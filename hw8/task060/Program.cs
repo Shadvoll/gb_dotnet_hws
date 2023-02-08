@@ -5,7 +5,7 @@
                      int upperBound)
 {
     int[,,] matrix = new int[dimensionOne, dimensionTwo, dimensionThree];
-    int[] choice = GenerateChoiceRage(dimensionOne * dimensionTwo * dimensionThree, lowerBound, upperBound);
+    int[] choice = GenerateChoiceRange((dimensionOne+1) * (dimensionTwo+1) * (dimensionThree +1), lowerBound, upperBound);
     for (int i = 0; i < dimensionOne; i++)
     {
         for (int j = 0; j < dimensionTwo; j++)
@@ -24,7 +24,7 @@ int GetNum(string text)
     Console.Write(text);
     return int.Parse(Console.ReadLine());
 }
-int[] GenerateChoiceRage(int size, int lowerBound, int upperBound)
+int[] GenerateChoiceRange(int size, int lowerBound, int upperBound)
 {
     int[] result = new int[size];
     int i = 0;
