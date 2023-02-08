@@ -20,7 +20,7 @@ double x0 = (b2 - b1) / (k1 - k2);
 double y0 = k1 * x0 + b1;
 if (Math.Abs(k1) == Math.Abs(k2))
 {
-    Console.WriteLine("Прямые параллельны. Решений нет.")
+    Console.WriteLine("Прямые параллельны. Решений нет.");
 }
 else
 {
