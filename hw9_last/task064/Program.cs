@@ -4,9 +4,11 @@
     return int.Parse(Console.ReadLine());
 }
 
-void RecursiveInverseOut(int number){
+void RecursiveInverseOut(int number)
+{
     Console.Write($"{number} ");
-    if (number == 1){
+    if (number == 1)
+    {
         return;
     }
     RecursiveInverseOut(number - 1);
